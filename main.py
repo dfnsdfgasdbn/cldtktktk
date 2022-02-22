@@ -33,11 +33,11 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def start_handler(update, context):
     update.message.reply_sticker('https://t.me/STM_Developers/189')
-    update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\nMy CMD\n\n/start - Restart Me\n/abot - My About\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
+    update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\nMy CMD\n\n/start - Restart Me\n/about - My About\n\nGet Me a Link To Download Videos\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
 
 def about_handler(update, context):
-    update.message.reply_sticker('https://t.me/STMDevelopers/26')
-    update.message.reply_text('Name :- STM TikTok Downloder Bot\n\nUserName :- @STM_TikTok_Downloader_Bot\n\nOwner :- @NidushaAmarasinghe\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
+    update.message.reply_sticker('Name :- STM TikTok Downloder Bot\n\nUserName :- @STM_TikTok_Downloader_Bot\n\nOwner :- @NidushaAmarasinghe\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️')
+    update.message.reply_text('',parse_mode=_ParseMode)
     
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
