@@ -32,11 +32,12 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_sticker('CAACAgUAAxkBAAED9kRiDq_GkOHuRHPeVv4IRhsvy4NtbwACqQQAAncUyFftN80YUiyXnyME')
+    update.message.reply_sticker('https://t.me/STM_Developers/189')
+    update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\nMy CMD\n\n/start - Restart Me\n/abot - My About\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
 
 def about_handler(update, context):
     update.message.reply_sticker('https://t.me/STMDevelopers/26')
-    update.message.reply_text('[🏖 TikTok Download Bot 🏖](https://github.com/STM-Developers/TikTok-Download-Bot/)\n\n[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️](https://t.me/STM_Developers)',parse_mode=_ParseMode)
+    update.message.reply_text('Name :- STM TikTok Downloder Bot\n\nUserName :- @STM_TikTok_Downloader_Bot\n\nOwner :- @NidushaAmarasinghe\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
     
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
@@ -48,7 +49,7 @@ def Download_Video(Link,update, context):
     watermark=None
 
     status_msg=message.reply_text('🚀 DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ ....')
-    status_sticker=message.reply_sticker('CAACAgUAAxkBAAED9jhiDqYeGjENlCjftByz0au6n4YAASEAAnUEAALpa8lXL9cvxeTK-2AjBA')
+    status_sticker=message.reply_sticker('https://t.me/STM_Developers/189')
 
     # Getting Download Links Using API
     try:
