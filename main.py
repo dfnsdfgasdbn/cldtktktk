@@ -106,8 +106,8 @@ def main() -> None:
     # Commands Listning
     dispatcher.add_handler(CommandHandler('start', start_handler, run_async=True))
     dispatcher.add_handler(CommandHandler('about', about_handler, run_async=True))
-    dispatcher.add_handler(CommandHandler('devs', about_handler, run_async=True))
-    dispatcher.add_handler(CommandHandler('help', about_handler, run_async=True))
+    dispatcher.add_handler(CommandHandler('devs', devs_handler, run_async=True))
+    dispatcher.add_handler(CommandHandler('help', help_handler, run_async=True))
 
     # Message Incoming Action
     dispatcher.add_handler( MessageHandler(Filters.text, incoming_message_action,run_async=True))
