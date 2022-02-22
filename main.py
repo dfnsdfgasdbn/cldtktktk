@@ -35,7 +35,7 @@ def start_handler(update, context):
     update.message.reply_sticker('CAACAgUAAxkBAAED9kRiDq_GkOHuRHPeVv4IRhsvy4NtbwACqQQAAncUyFftN80YUiyXnyME')
 
 def about_handler(update, context):
-    update.message.reply_sticker('CAACAgUAAxkBAAED9kZiDq_LFrib38c7DYu3jNz3ebsolgACJAUAAuTb4FdKtjtZGQ2ukiME')
+    update.message.reply_sticker('https://t.me/STMDevelopers/26')
     update.message.reply_text('[🏖 TikTok Download Bot 🏖](https://github.com/STM-Developers/TikTok-Download-Bot/)\n\n[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️](https://t.me/STM_Developers)',parse_mode=_ParseMode)
     
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
