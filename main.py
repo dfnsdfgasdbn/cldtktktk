@@ -36,7 +36,7 @@ def start_handler(update, context):
     update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\n🔗 Send any TikTok link to this BOT\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
 
 def about_handler(update, context):
-    update.message.reply_sticker('https://t.me/STM_Developers/189')
+    update.message.reply_sticker('https://t.me/slbotzone/206273')
     update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\n`My Owner Is` :- @NidushaAmarasinghe',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
