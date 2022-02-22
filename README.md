@@ -7,7 +7,7 @@
 
 ## 🚀 Deploy on Heroku 
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/NidushaAmarasinghe/TikTok-Downloader"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"/></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/NidushaAmarasinghe/TikTok-Downloader-Bot"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"/></a></p>
 
 🚧 Telegram : [👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️🇰](https://t.me/SL_Developers)<br>
 🙆‍♂️ Demo: [🎧 MUSIC ҒIΠDΣR BOT 🎵](https://t.me/The_Shazam_BOT)
