@@ -40,7 +40,7 @@ def about_handler(update, context):
     update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\n`My Owner Is` :- @NidushaAmarasinghe',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
-    update.message.reply_text('`Owner` :- @NidushaAmarasinghe\n\n`Founder` :- @MalithRukshan\n\n`Dev` :-[Single Developers </>](https://t.me/SingleDevelopers)',parse_mode=_ParseMode)
+    update.message.reply_text('`Owner` :- @NidushaAmarasinghe\n\n`Founder` :- @MalithRukshan\n\n`Dev` :- 👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
 
 def help_handler(update, context):
     update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
