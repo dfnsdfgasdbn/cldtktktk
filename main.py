@@ -37,7 +37,14 @@ def start_handler(update, context):
 
 def about_handler(update, context):
     update.message.reply_sticker('https://t.me/STM_Developers/189')
-    update.message.reply_text('i am tiktok downloader bot',parse_mode=_ParseMode)
+    update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\nMy Owner Is [👻Nidusha Amarasinghe✌️](t.me/NidushaAmarasinghe)',parse_mode=_ParseMode)
+    
+def devs_handler(update, context):
+    update.message.reply_text('Owner :- [👻Nidusha Amarasinghe✌️](https://t.me/NidushaAmarasinghe)\n\n[👻Malith Rukshan✌️](https://t.me/MalithRukshan)\n\n[Single Developers </>](https://t.me/SingleDevelopers)',parse_mode=_ParseMode)
+
+def help_handler(update, context):
+    update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , help',parse_mode=_ParseMode)
+  
     
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
@@ -99,6 +106,8 @@ def main() -> None:
     # Commands Listning
     dispatcher.add_handler(CommandHandler('start', start_handler, run_async=True))
     dispatcher.add_handler(CommandHandler('about', about_handler, run_async=True))
+    dispatcher.add_handler(CommandHandler('devs', about_handler, run_async=True))
+    dispatcher.add_handler(CommandHandler('help', about_handler, run_async=True))
 
     # Message Incoming Action
     dispatcher.add_handler( MessageHandler(Filters.text, incoming_message_action,run_async=True))
