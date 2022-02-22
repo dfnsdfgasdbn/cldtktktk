@@ -32,15 +32,15 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_sticker('https://t.me/STM_Developers/189')
-    update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\nMy CMD\n\n/start - Restart Me\n/about - My About\n\nSend Me a Link To Download Videos\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
+    update.message.reply_sticker('https://t.me/STM_Developers/194')
+    update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\n🔗 Send any TikTok link to this BOT\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
 
 def about_handler(update, context):
     update.message.reply_sticker('https://t.me/STM_Developers/189')
-    update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\nMy Owner Is [👻Nidusha Amarasinghe✌️](t.me/NidushaAmarasinghe)',parse_mode=_ParseMode)
+    update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\n`My Owner Is` :- @NidushaAmarasinghe',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
-    update.message.reply_text('Owner :- [👻Nidusha Amarasinghe✌️](https://t.me/NidushaAmarasinghe)\n\n[👻Malith Rukshan✌️](https://t.me/MalithRukshan)\n\n[Single Developers </>](https://t.me/SingleDevelopers)',parse_mode=_ParseMode)
+    update.message.reply_text('`Owner` :- [👻Nidusha Amarasinghe✌️](https://t.me/NidushaAmarasinghe)\n\n`Founder` :- @MalithRukshan\n\n`Dev` :-[Single Developers </>](https://t.me/SingleDevelopers)',parse_mode=_ParseMode)
 
 def help_handler(update, context):
     update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , help',parse_mode=_ParseMode)
@@ -56,7 +56,7 @@ def Download_Video(Link,update, context):
     watermark=None
 
     status_msg=message.reply_text('🚀 DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ ....')
-    status_sticker=message.reply_sticker('https://t.me/STM_Developers/189')
+    status_sticker=message.reply_sticker('https://t.me/slbotzone/206254')
 
     # Getting Download Links Using API
     try:
