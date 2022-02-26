@@ -5,7 +5,6 @@
   "logo": "https://telegra.ph/file/8801b1ec6d4102366e81a.jpg",
   "keywords": ["telegram", "bot", "api", "tiktok", "tiktok-api"],
   "env": {
-    "ENVIRONMENT": "Heroku",
     "BOT_TOKEN": {
             "description": "API Token for your Telegram bot (Take it from @BotFather)",
             "required": true
