@@ -11,9 +11,10 @@ import logging
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
+SD_API = single-developers.up.railway.app
 
 # TikTok Downloader API
-API = 'https://api.single-developers.software/tiktok?url='
+API = os.environ.get('SD_API')
 
 # Your BOT Token
 BOT_TOKEN = os.getenv("BOT_TOKEN")
@@ -40,12 +41,14 @@ def about_handler(update, context):
     update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\n`My Owner Is` :- @NidushaAmarasinghe',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
-    update.message.reply_text('`Owner` :- @NidushaAmarasinghe\n\n`Founder` :- @MalithRukshan\n\n`Dev` :- 👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
+    update.message.reply_text('`Owner` :- @NidushaAmarasinghe\n\n`Founder` :- @MalithRukshan\n\n`Dev` :- @STM_Developers',parse_mode=_ParseMode)
 
 def help_handler(update, context):
-    update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
+    update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
   
-    
+def tools_handler(update, context):
+    update.message.reply_sticker('https://t.me/SingleDevelopers/616')
+    update.message.reply_text('Powerd By @SingleDevelopers\n\nAnd\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)    
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 # Download Task
@@ -73,7 +76,7 @@ def Download_Video(Link,update, context):
     caption_text="""◇───────────────◇
 ✅ Successfully Downloaded {} Video 🔰
 🔰 Powerd by : [🏖 TikTok Download Bot 🏖](https://github.com/STM-Developers/TikTok-Download-Bot/)
-[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️ ](https://t.me/STM_Developers) Corporation ©️
+[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️ ](https://t.me/STM_Developers)
 ◇───────────────◇"""
     
     # Uploading Downloaded Videos to Telegram
@@ -108,6 +111,7 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler('about', about_handler, run_async=True))
     dispatcher.add_handler(CommandHandler('devs', devs_handler, run_async=True))
     dispatcher.add_handler(CommandHandler('help', help_handler, run_async=True))
+    dispatcher.add_handler(CommandHandler('tools', tools_handler, run_async=True))
 
     # Message Incoming Action
     dispatcher.add_handler( MessageHandler(Filters.text, incoming_message_action,run_async=True))
