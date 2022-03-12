@@ -46,7 +46,7 @@ def help_handler(update, context):
     update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
   
 def tools_handler(update, context):
-    update.message.reply_sticker('https://t.me/SingleDevelopers/616')
+    update.message.reply_text('https://t.me/SingleDevelopers/616')
     update.message.reply_text('Powerd By @SingleDevelopers\n\nAnd\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)    
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
