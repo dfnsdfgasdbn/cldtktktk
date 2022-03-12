@@ -11,10 +11,9 @@ import logging
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
-SD_API = single-developers.up.railway.app
 
 # TikTok Downloader API
-API = os.environ.get('SD_API')
+API = 'single-developers.up.railway.app'
 
 # Your BOT Token
 BOT_TOKEN = os.getenv("BOT_TOKEN")
