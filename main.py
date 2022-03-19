@@ -11,7 +11,6 @@ import logging
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
-
 # TikTok Downloader API
 API = 'https://single-developers.up.railway.app/tiktok?url='
 
