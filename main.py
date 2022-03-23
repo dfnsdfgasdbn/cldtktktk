@@ -35,7 +35,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def start_handler(update, context):
     update.message.reply_text(
-        f"""👋 Hai! \nSaya adalah {BOT_NAME}\n
+        f"""👋 Hai! Saya adalah {BOT_NAME}\n
 🤖 Bot yang bisa membantu anda Mengunduh video tiktok\n
 🔗 Silahkan kirim tautan video TikTok ke Bot ini
 """,
