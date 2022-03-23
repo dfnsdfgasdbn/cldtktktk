@@ -1,4 +1,4 @@
-from telegram import ParseMode
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
 from telegram.ext import (
     Updater,
     CommandHandler,
@@ -31,7 +31,27 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_text('Hai! Saya adalah bot telegram yang bisa membantu anda Mengunduh video tiktok\n\n🔗 Kirim tautan video TikTok ke BOT ini',parse_mode=_ParseMode)
+    update.message.reply_text(
+        f"""👋 Hai! Saya adalah bot telegram yang bisa membantu anda Mengunduh video tiktok\n
+🔗 Kirim tautan video TikTok ke BOT ini
+""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("➕ Add me to a Group ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                ],[
+                    InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")
+                ],[
+                    InlineKeyboardButton("📚 Commands", callback_data="command_list"),
+                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_USERNAME}")
+                ],[
+                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ],[
+                    InlineKeyboardButton("🌐 Source Code", url="https://github.com/levina-lab/video-stream")
+                ],
+            ]
+        ),parse_mode=_ParseMode)
 
 def about_handler(update, context):
     update.message.reply_text('Hai! Saya adalah bot telegram yang bisa membantu anda mendownload video tiktok',parse_mode=_ParseMode)
