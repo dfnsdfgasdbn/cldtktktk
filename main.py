@@ -35,8 +35,8 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def start_handler(update, context):
     update.message.reply_text(
-        f"""👋 Hai! Saya adalah bot telegram yang bisa membantu anda Mengunduh video tiktok\n
-🔗 Kirim tautan video TikTok ke BOT ini
+        f"""👋 Hai! \nSaya adalah {BOT_NAME} Bot yang bisa membantu anda Mengunduh video tiktok\n
+🔗  silahkan kirim tautan video TikTok ke Bot ini
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -64,11 +64,10 @@ def Download_Video(Link,update, context):
        print('Download Links Generated \n\n\n'+str(req)+'\n\n\n')
     except:
         print('Download Links Generate Error !!!')
-        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @STM_Developers')
+        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! ')
         return
     
-    caption_text= f"📥 Download Video TikTok {} Sukses
-    🤖 @{BOT_NAME}
+    caption_text="📥 Download Video TikTok {} Sukses
 "
     
     # Uploading Downloaded Videos to Telegram
