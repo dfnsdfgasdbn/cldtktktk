@@ -16,6 +16,9 @@ API = 'https://single-developers.up.railway.app/tiktok?url='
 
 # Your BOT Token
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+UPDATES_CHANNEL = os.getenv("UPDATES_CHANNEL")
+GROUP_SUPPORT = os.getenv("GROUP_SUPPORT")
+BOT_NAME = os.getenv("BOT_NAME")
 
 # TikTok Video URL Types , You Can Add More to This :)
 TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tiktok.com','https://www.tiktok.com']
@@ -38,21 +41,11 @@ def start_handler(update, context):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/dfsdfsdfsdf"),
-                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/dfsdfsdfsdf")
+                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],
             ]
         ),parse_mode=_ParseMode)
-
-def about_handler(update, context):
-    update.message.reply_text('Hai! Saya adalah bot telegram yang bisa membantu anda mendownload video tiktok',parse_mode=_ParseMode)
-    
-def devs_handler(update, context):
-    update.message.reply_text('`Owner` :- @NidushaAmarasinghe\n\n`Founder` :- @MalithRukshan\n\n`Dev` :- @STM_Developers',parse_mode=_ParseMode)
-
-def help_handler(update, context):
-    update.message.reply_text('🔗 Kirim tautan video TikTok ke BOT ini,\n🚀 Bot ini akan Mengunduh dan Mengirim Video TikTok itu untuk Anda.\n\n🔑 Perintah BOT : /start , /about , /devs , /help',parse_mode=_ParseMode)
-  
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
@@ -74,9 +67,9 @@ def Download_Video(Link,update, context):
         status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @STM_Developers')
         return
     
-    caption_text="""◇───────────────◇
-✅ Successfully Downloaded {} Video 🔰
-◇───────────────◇"""
+    caption_text="""📥 Download Video TikTok {} Sukses
+    🤖 @{BOT_NAME}
+"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
@@ -105,9 +98,6 @@ def main() -> None:
 
     # Commands Listning
     dispatcher.add_handler(CommandHandler('start', start_handler, run_async=True))
-    dispatcher.add_handler(CommandHandler('about', about_handler, run_async=True))
-    dispatcher.add_handler(CommandHandler('devs', devs_handler, run_async=True))
-    dispatcher.add_handler(CommandHandler('help', help_handler, run_async=True))
 
 
     # Message Incoming Action
