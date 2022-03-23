@@ -42,8 +42,8 @@ def start_handler(update, context):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("👥 Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],
             ]
         ),parse_mode=_ParseMode)
@@ -56,7 +56,7 @@ def Download_Video(Link,update, context):
     req=None
     no_watermark=None
 
-    status_msg=message.reply_text('🔄sedang mendownload ....')
+    status_msg=message.reply_text('🔄 Sedang mendownload ....')
 
     # Getting Download Links Using API
     try:
@@ -69,12 +69,11 @@ def Download_Video(Link,update, context):
         return
     
     caption_text="""📥 Download Sukses
-    💡 {}
 """
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
-    status_msg.edit_text('🔄sedang mengupload....')
+    status_msg.edit_text('⏳ Sedang mengupload....')
     message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
 
     # Task Done ! So, Deleteing Status Messages
