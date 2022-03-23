@@ -8,6 +8,21 @@
     "BOT_TOKEN": {
             "description": "API Token for your Telegram bot (Take it from @BotFather)",
             "required": true
+    },
+    {
+    "GROUP_SUPPORT": {
+            "description": "API Token for your Telegram bot (Take it from @BotFather)",
+            "required": true
+    },
+    {
+    "UPDATES_CHANNEL": {
+            "description": "API Token for your Telegram bot (Take it from @BotFather)",
+            "required": true
+    },
+    {
+    "BOT_NAME": {
+            "description": "API Token for your Telegram bot (Take it from @BotFather)",
+            "required": true
     }
   }
 }
