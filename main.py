@@ -67,8 +67,8 @@ def Download_Video(Link,update, context):
         status_msg.edit_text('⁉️ TikTok Downloader API Error !!! ')
         return
     
-    caption_text="📥 Download Video TikTok {} Sukses
-"
+    caption_text="""📥 Download Video TikTok {} Sukses
+"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
