@@ -19,7 +19,6 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 UPDATES_CHANNEL = os.getenv("UPDATES_CHANNEL")
 GROUP_SUPPORT = os.getenv("GROUP_SUPPORT")
 BOT_NAME = os.getenv("BOT_NAME")
-BOT_USERNAME = os.getenv("BOT_USERNAME")
 
 # TikTok Video URL Types , You Can Add More to This :)
 TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tiktok.com','https://www.tiktok.com']
@@ -36,7 +35,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def start_handler(update, context):
     update.message.reply_text(
-        f"""👋 Hai! \nSaya adalah [{BOT_NAME}](https://t.me/{BOT_USERNAME})\n
+        f"""👋 Hai! \nSaya adalah {BOT_NAME}\n
 🤖 Bot yang bisa membantu anda Mengunduh video tiktok\n
 🔗 Silahkan kirim tautan video TikTok ke Bot ini
 """,
