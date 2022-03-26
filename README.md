@@ -14,7 +14,7 @@
 
 🔗 Send any TikTok link to this BOT, then,</br></br>
 🚀 This bot will Download and Send that TikTok Video for You. </br></br>
-🔑 BOT Commands : `/start` , `/about`
+🔑 BOT Commands : `/start`
 
 <br>
 
@@ -25,7 +25,7 @@
 <br>
 
 ## 🎯 Credits and Other
-- [Me](https://github.com/NidushaAmarasinghe) Owner Of This Project ✌️
+- [NidushaAmarasinghe](https://github.com/NidushaAmarasinghe) Owner Of This Project ✌️
 - [Malith Rukshan](https://github.com/Malith-Rukshan) For This Project ✌️
 - [Single Developers </>](https://github.com/Single-Developers) For TikTok API 🏖
 
