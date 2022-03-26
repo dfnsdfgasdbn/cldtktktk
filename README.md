@@ -9,14 +9,6 @@
 
 <p><a href="https://heroku.com/deploy?template=https://github.com/NidushaAmarasinghe/TikTok-Downloader-Bot"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"/></a></p>
 
-🚧 Telegram : [👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌](https://t.me/SL_Developers)<br>
-🙆‍♂️ Demo: [🎧 MUSIC ҒIΠDΣR BOT 🎵](https://t.me/The_Shazam_BOT)
-<br>
-<br>
-
-## 🛠 Configuring Environments 
-- `BOT_TOKEN` : Your bot token, generate it from [🤖 BotFather](https://t.me/BotFather)
-<br>
 
 ## 📚 Description 
 
@@ -37,9 +29,4 @@
 - [Malith Rukshan](https://github.com/Malith-Rukshan) For This Project ✌️
 - [Single Developers </>](https://github.com/Single-Developers) For TikTok API 🏖
 
-<br>
 
-## ☘️ Telegram
-
-[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️](https://t.me/STMDevelopers)<br>
-[𝕊𝕋𝕄 𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣𝕤™️](https://t.me/STM_Developers)
