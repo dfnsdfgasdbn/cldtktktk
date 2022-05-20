@@ -35,15 +35,14 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def start_handler(update, context):
     update.message.reply_text(
-        f"""👋 Hai! Saya adalah {BOT_NAME}\n
-🤖 Bot yang bisa membantu anda Mengunduh video tiktok\n
-🔗 Silahkan kirim tautan video TikTok ke Bot ini
+        f"""🤖 Hai! Saya {BOT_NAME} akan membantu mengunduh video Tiktok lebih mudah\n
+🔗 Kirim tautan video TikTok ke Bot ini
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👥 Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],
             ]
         ),parse_mode=_ParseMode)
@@ -56,7 +55,7 @@ def Download_Video(Link,update, context):
     req=None
     no_watermark=None
 
-    status_msg=message.reply_text('🔄 Sedang mendownload ....')
+    status_msg=message.reply_text('⏳ Sedang mendownload video ....')
 
     # Getting Download Links Using API
     try:
@@ -68,12 +67,12 @@ def Download_Video(Link,update, context):
         status_msg.edit_text('⁉️ TikTok Downloader API Error !!! ')
         return
     
-    caption_text="""📥 Download Sukses
+    caption_text="""📥 Download video Sukses
 """
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
-    status_msg.edit_text('⏳ Sedang mengupload....')
+    status_msg.edit_text('⏳ Sedang mengupload video....')
     message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
 
     # Task Done ! So, Deleteing Status Messages
