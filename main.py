@@ -21,7 +21,7 @@ GROUP_SUPPORT = os.getenv("GROUP_SUPPORT")
 BOT_NAME = os.getenv("BOT_NAME")
 
 # TikTok Video URL Types , You Can Add More to This :)
-TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tiktok.com','https://www.tiktok.com']
+TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tiktok.com','https://www.tiktok.com','https://vm.tiktok.com']
 
 # ParseMode Type For All Messages
 _ParseMode=ParseMode.MARKDOWN
