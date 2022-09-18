@@ -12,7 +12,7 @@ import logging
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 # TikTok Downloader API
-API = 'https://api.douyin.wtf/video?url='
+API = 'https://api.single-developers.software/tiktok?url='
 
 # Your BOT Token
 BOT_TOKEN = os.getenv("BOT_TOKEN")
