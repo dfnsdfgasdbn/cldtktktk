@@ -12,7 +12,7 @@ import logging
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 # TikTok Downloader API
-API = 'https://api.single-developers.software/tiktok?url='
+API = 'https://api.lolhuman.xyz/api/tiktokwm?apikey=59ffe9a00e8c2decfb5ceef5&url='
 
 # Your BOT Token
 BOT_TOKEN = os.getenv("BOT_TOKEN")
